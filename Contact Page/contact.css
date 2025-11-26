@@ -1,0 +1,84 @@
+/* Gradient background applied to body */
+.gradient-bg {
+  background: linear-gradient(to right, #4e54c8, #8f94fb);
+  min-height: 100vh;
+  color: white;
+}
+
+/* Custom teal theme */
+.bg-teal {
+  background-color: teal !important;
+}
+
+.btn-teal {
+  background-color: teal;
+  color: white;
+}
+
+.btn-teal:hover {
+  background-color: #006666;
+  color: #fff;
+}
+
+/* Optional login/profile containers */
+.login-container, .profile-container {
+  width: 400px;
+  margin: 80px auto;
+  background: rgba(255, 255, 255, 0.15);
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+
+input {
+  width: 90%;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 8px;
+}
+
+button {
+  width: 95%;
+  padding: 12px;
+  background: #222;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background: #000;
+}
+
+/* Profile card */
+.profile-card {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.profile-card img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+/* Logout button */
+.logout-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 25px;
+  background: #222;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+}
+
+.logout-btn:hover {
+  background: #000;
+}

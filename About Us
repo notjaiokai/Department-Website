@@ -1,0 +1,239 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us – NCU Dental Hygiene</title>
+
+    <!-- Playfair Display Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+   <link
+  href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+  rel="stylesheet">
+ <script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js">
+</script>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Playfair Display', serif;
+            line-height: 1.6;
+            color: #FFFFFF
+        }
+
+
+        header {
+            background: #6a2c91;
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        section {
+            padding: 40px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        h2 {
+            color: #367588;
+            border-left: 6px solid #367588;
+            padding-left: 12px;
+        }
+
+        .mycard {
+            background: #6a2c91;
+            border-color: aqua;
+            border-width: 8px8i;
+            padding: 25px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        footer {
+            background: #367588;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 600px) {
+            header h1 { font-size: 2rem; }
+            section { padding: 25px 15px; }
+        }
+    </style>
+   
+
+</head>
+
+<body>
+
+<header>
+    <h1>NCU Dental Hygiene Program</h1>
+    <p>Promoting excellence in oral health education and clinical care</p>
+</header>
+
+<section>
+    <h2>About Us</h2>
+    <div class="mycard">
+        <p>
+            The Dental Hygiene Program at Northern Caribbean University (NCU) is committed to preparing 
+            highly skilled, compassionate, and ethical dental hygiene professionals. Our program blends 
+            classroom instruction, hands-on clinical experiences, and community outreach to ensure that 
+            each student is fully equipped to promote oral health and serve with excellence.
+        </p>
+    </div>
+</section>
+
+<section>
+    <h2>Our Mission</h2>
+    <div class="mycard">
+        <p>
+            To educate and empower dental hygiene students to provide safe, effective, evidence-based 
+            oral health care that enhances the well-being of individuals, families, and communities.
+        </p>
+    </div>
+</section>
+
+<section>
+    <h2>Our Vision</h2>
+    <div class="mycard">
+        <p>
+            To be a leading dental hygiene program recognized for academic quality, professional integrity, 
+            and meaningful contributions to oral health promotion across Jamaica and beyond.
+        </p>
+    </div>
+</section>
+
+<section>
+    <h2>Program Overview</h2>
+    <div class="mycard">
+        <ul>
+            <li>Comprehensive classroom and laboratory instruction</li>
+            <li>Clinical practice in modern dental facilities</li>
+            <li>Community outreach and dental health education initiatives</li>
+            <li>Training focused on prevention, patient care, and professional ethics</li>
+        </ul>
+    </div>
+</section>
+
+<section>
+    <h2>Contact Us</h2>
+    <div class="mycard">
+        <p><strong>NCU Dental Hygiene Program</strong></p>
+        <p>College of Natural & Applied Sciences, Allied Health & Nursing</p>
+        <p>Email: info@ncu.edu.jm</p>
+        <p>Phone: (876) 963-7000</p>
+    </div>
+</section>
+
+<section>    <!--accordian bootsrap section-->
+  <h2>Requirements</h2><br>
+<div class="accordion" id="accordionExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        Age
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>Be at least 17 years of age</strong> 
+      </div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        Academics
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong> Five GCE/CSEC passes (at a minimum of level III or Grade C, with only two Grade 3 passes applicable) or equivalent, including English Language.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        Interview
+      </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>Applicants must attend an interview and satisfy the selection committee regarding their suitability for the course of study.</strong></p>
+      </div>
+    </div>
+  </div>
+
+   <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+       Health Documentation:
+      </button>
+    </h2>
+    <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong> Submission of a medical certificate (physical, dental, ophthalmic).</strong> 
+    Other: Provide documentary evidence of at least 100 hours of supervisory attendance in a dental/dental hygiene facility (this can be completed after acceptance). </p>
+      </div>
+    </div>
+  </div>
+   
+   <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+      Specific Subject Requirements
+      </button>
+    </h2>
+    <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>The required CSEC/GCE subjects (or equivalent) for the Dental Hygiene program must include: 
+English Language
+Mathematics
+Chemistry
+Biology
+One (1) other approved subject </p>
+<p>*A passing grade of C+ or better in specific NCU introductory chemistry courses (CHEM111 and CHEM112) may be used to satisfy the CSEC Chemistry requirement if needed. </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+        Application Process
+      </button>
+    </h2>
+    <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>To begin the application process, visit the Northern Caribbean University Admissions page to apply online and find specific contact information for the College of Natural & Applied Sciences, Allied Health & Nursing, which houses the Department of Dental Hygiene. </p>
+        <p>College of Natural & Applied Sciences, Allied Health & Nursing</p>
+        <p>Email: info@ncu.edu.jm</p>
+        <p>Phone: (876) 963-7000</p>
+</strong> 
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--END OF BOOTSRAP -->
+</section>
+
+
+
+
+</body>
+</html>
+
+            

@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="../footer.css" rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -268,97 +269,13 @@
         }
 
         /* Navigation */
-        nav {
+        .navbar {
             position: fixed;
             top: 0;
             left: 0;
             right: 0;
             z-index: 1000;
-            padding: 1rem 3rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background: rgba(26, 16, 37, 0.95);
-            backdrop-filter: blur(10px);
-            border-bottom: 1px solid rgba(223, 197, 254, 0.1);
         }
-
-        .nav-logo {
-            display: flex;
-            align-items: center;
-            gap: 0.75rem;
-            text-decoration: none;
-        }
-
-        .nav-logo-icon {
-            width: 50px;
-            height: 50px;
-            border: 2px solid #DFC5FE;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.5rem;
-        }
-
-        .nav-logo-text {
-            font-family: 'Playfair Display', serif;
-            color: white;
-            font-size: 1.1rem;
-            font-weight: 500;
-        }
-
-        .nav-links {
-            display: flex;
-            gap: 2.5rem;
-            list-style: none;
-            margin: 0;
-        }
-
-        .nav-links a {
-            color: rgba(255, 255, 255, 0.8);
-            text-decoration: none;
-            font-size: 0.9rem;
-            font-weight: 400;
-            transition: color 0.3s ease;
-            position: relative;
-        }
-
-        .nav-links a:hover,
-        .nav-links a.active {
-            color: white;
-        }
-
-        .nav-links a.active::after {
-            content: '';
-            position: absolute;
-            bottom: -5px;
-            left: 0;
-            width: 100%;
-            height: 2px;
-            background: #DFC5FE;
-        }
-
-        .nav-social {
-            display: flex;
-            gap: 0.5rem;
-        }
-
-        .nav-social a {
-            width: 32px;
-            height: 32px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 0.85rem;
-            transition: all 0.3s ease;
-        }
-
-        .nav-social a:nth-child(1) { background: #DFC5FE; color: #1a1a2e; }
-        .nav-social a:nth-child(2) { background: rgba(255,255,255,0.1); color: white; }
-        .nav-social a:nth-child(3) { background: rgba(255,255,255,0.1); color: white; }
-        .nav-social a:nth-child(4) { background: rgba(255,255,255,0.1); color: white; }
 
         /* Hero Section */
         .hero {
@@ -1029,129 +946,6 @@
             border-radius: 3px;
         }
 
-        /* Footer */
-        footer {
-            background: #241533;
-            padding: 4rem 3rem 2rem;
-            border-top: 1px solid rgba(223, 197, 254, 0.1);
-            position: relative;
-        }
-
-        .footer-accent {
-            position: absolute;
-            bottom: 0;
-            right: 100px;
-            width: 60px;
-            height: 200px;
-            background: #DFC5FE;
-            transform: skewY(-45deg);
-            transform-origin: bottom right;
-        }
-
-        .footer-grid {
-            display: grid;
-            grid-template-columns: 2fr 1fr 1fr 1fr 2fr;
-            gap: 3rem;
-            margin-bottom: 3rem;
-        }
-
-        .footer-brand {
-            display: flex;
-            flex-direction: column;
-            gap: 1rem;
-        }
-
-        .footer-logo {
-            display: flex;
-            align-items: center;
-            gap: 0.75rem;
-        }
-
-        .footer-logo-icon {
-            width: 50px;
-            height: 50px;
-            border: 2px solid #DFC5FE;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.5rem;
-        }
-
-        .footer-logo-text {
-            font-family: 'Playfair Display', serif;
-            font-size: 1.1rem;
-        }
-
-        .footer-logo-text span {
-            display: block;
-            font-size: 0.7rem;
-            color: rgba(255, 255, 255, 0.5);
-            font-family: 'Inter', sans-serif;
-        }
-
-        .footer-social {
-            display: flex;
-            gap: 0.5rem;
-            margin-top: 1rem;
-        }
-
-        .footer-social a {
-            width: 36px;
-            height: 36px;
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            transition: all 0.3s ease;
-        }
-
-        .footer-social a:hover {
-            background: #DFC5FE;
-            color: #1a1a2e;
-        }
-
-        .footer-column h4 {
-            font-size: 0.9rem;
-            font-weight: 600;
-            margin-bottom: 1.5rem;
-        }
-
-        .footer-column ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        .footer-column li {
-            margin-bottom: 0.75rem;
-        }
-
-        .footer-column a {
-            color: rgba(255, 255, 255, 0.5);
-            text-decoration: none;
-            font-size: 0.85rem;
-            transition: color 0.3s ease;
-        }
-
-        .footer-column a:hover {
-            color: #DFC5FE;
-        }
-
-        .footer-contact p {
-            color: rgba(255, 255, 255, 0.5);
-            font-size: 0.85rem;
-            line-height: 1.8;
-        }
-
-        .footer-bottom {
-            text-align: center;
-            padding-top: 2rem;
-            border-top: 1px solid rgba(223, 197, 254, 0.1);
-            color: rgba(255, 255, 255, 0.4);
-            font-size: 0.8rem;
-        }
 
         /* Responsive */
         @media (max-width: 1024px) {
@@ -1259,24 +1053,35 @@
     </div>
 
     <!-- Navigation -->
-    <nav>
-        <a href="#" class="nav-logo">
-            <div class="nav-logo-icon">🦷</div>
-            <div class="nav-logo-text">Northern Caribbean University</div>
+    <nav class="navbar navbar-expand-md" style="background: rgba(26, 16, 37, 0.95); backdrop-filter: blur(10px); border-bottom: 1px solid rgba(223, 197, 254, 0.1);" data-bs-theme="dark">
+      <div class="container px-4 px-lg-5">
+        <a class="navbar-brand me-4 me-lg-5" href="../Dental%20Homepage/index.html" aria-label="Home">
+          <img src="../Dental%20Homepage/whitening%202.png" alt="DDH home tooth icon" width="50" height="50" class="d-inline-block align-text-top">
         </a>
-        <ul class="nav-links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#" class="active">Programs</a></li>
-            <li><a href="#">Admissions</a></li>
-            <li><a href="#">Events</a></li>
-        </ul>
-        <div class="nav-social">
-            <a href="#"><i class="bi bi-facebook"></i></a>
-            <a href="#"><i class="bi bi-twitter"></i></a>
-            <a href="#"><i class="bi bi-instagram"></i></a>
-            <a href="#"><i class="bi bi-linkedin"></i></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-md-0 gap-1">
+            <li class="nav-item">
+              <a class="nav-link link-light" href="../Dental%20Homepage/index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link-light" href="../About%20us%20page/About%20Us.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link-light active" href="#">Programs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link-light" href="../Contact%20Page/contact.html">Contact</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-light" type="submit">Search</button>
+          </form>
         </div>
+      </div>
     </nav>
 
     <!-- Courses Section -->
@@ -1675,7 +1480,7 @@
                 <div class="footer-logo">
                     <div class="footer-logo-icon">🦷</div>
                     <div class="footer-logo-text">
-                        State College
+                        Northern Caribbean University
                         <span>Dental Hygiene Program</span>
                     </div>
                 </div>
@@ -1690,29 +1495,29 @@
             <div class="footer-column">
                 <h4>Quick Links</h4>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Programs</a></li>
-                    <li><a href="#">Faculty</a></li>
+                    <li><a href="../Dental%20Homepage/index.html">Home</a></li>
+                    <li><a href="../About%20us%20page/About%20Us.html">About Us</a></li>
+                    <li><a href="courses.html">Programs</a></li>
+                    <li><a href="../Contact%20Page/contact.html">Contact</a></li>
                 </ul>
             </div>
 
             <div class="footer-column">
                 <h4>Resources</h4>
                 <ul>
-                    <li><a href="#">Student Portal</a></li>
-                    <li><a href="#">Library</a></li>
-                    <li><a href="#">Career Services</a></li>
-                    <li><a href="#">Alumni</a></li>
+                    <li><a href="https://aeorion.ncu.edu.jm/aeHome.aspx">Student Portal</a></li>
+                    <li><a href="https://hwrc.ncu.edu.jm/">Library</a></li>
+                    <li><a href="https://www.ncu.edu.jm/careers">Career Services</a></li>
+                    <li><a href="https://www.ncu.edu.jm/alumni">Alumni</a></li>
                 </ul>
             </div>
 
             <div class="footer-column">
                 <h4>Admissions</h4>
                 <ul>
-                    <li><a href="#">Apply Now</a></li>
-                    <li><a href="#">Requirements</a></li>
-                    <li><a href="#">Financial Aid</a></li>
+                    <li><a href="https://apply.ncu.edu.jm/welcome">Apply Now</a></li>
+                    <li><a href="../About%20us%20page/About%20Us.html">Requirements</a></li>
+                    <li><a href="https://www.ncu.edu.jm/financialaid">Financial Aid</a></li>
                     <li><a href="#">Visit Campus</a></li>
                 </ul>
             </div>
@@ -1720,16 +1525,16 @@
             <div class="footer-column footer-contact">
                 <h4>Contact</h4>
                 <p>
-                    123 University Drive<br>
-                    State College, PA 16801<br><br>
-                    admissions@statecollege.edu<br>
-                    (555) 123-4567
+                    Manchester RD.,<br>
+                    Mandeville, Manchester, Jamaica<br><br>
+                    admissions@ncu.edu.jm<br>
+                    (876) 618-1652
                 </p>
             </div>
         </div>
 
         <div class="footer-bottom">
-            <p>© 2024 State College. All Rights Reserved.</p>
+            <p>© 2025 Northern Caribbean University. All Rights Reserved.</p>
         </div>
     </footer>
 
@@ -1872,6 +1677,14 @@
                     }
                 });
             });
+
+            // Search from navbar redirect
+            const params = new URLSearchParams(window.location.search);
+            const searchQuery = params.get('q');
+            if (searchQuery) {
+                document.getElementById('courseSearch').value = searchQuery;
+                document.getElementById('courseSearch').dispatchEvent(new Event('input', { bubbles: true }));
+            }
         });
     </script>
 </body>
